@@ -427,8 +427,17 @@ HOME
 	font-weight: bold;
 	border: 1px solid #79cc79;
 	line-height: 80px;*/
-	background-color: #98ff98;
-	color: #676CFB;
+	background-color: transparent/*#98ff98*/;
+	color: /*#676CFB*/#54b358;
+	padding: 0px;
+	height: 70px;
+	width: 70px;
+}
+
+#add-balance /deep/ core-icon, #subtract-balance /deep/ core-icon {
+	height: 120%;
+	width: 120%;
+	margin: -10% 0 0 -10%;
 }
 
 .balance-button {
