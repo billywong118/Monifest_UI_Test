@@ -16,40 +16,7 @@
     <link rel="import" href="bower_components/paper-toast/paper-toast.html">
     <link rel="import" href="bower_components/paper-fab/paper-fab.html">
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-        body {
-            font-family: sans-serif;
-        }
-        core-scaffold {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-        #core_toolbar {
-            color: rgb(255, 255, 255);
-            background-color: rgb(79, 125, 201);
-        }
-        #core_card {
-            width: 96%;
-            background-color: #32eaf1;
-            border-top-left-radius: 2px;
-            border-top-right-radius: 2px;
-            border-bottom-right-radius: 2px;
-            border-bottom-left-radius: 2px;
-            box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
-            margin: 2%;
-            text-align: left;
-        }
-        paper-fab {
-            position: absolute;
-            right: 20px;
-            bottom: 20px;
-        }
+
     </style>
 </head>
 <body unresolved>
@@ -62,7 +29,8 @@
             <core-item icon="create" label="Sign Up"><a href="signup.html"></a></core-item>
         </core-menu>
     </core-header-panel>
-    <div tool>Forgot Password</div>
+    <div id="title" tool>Forgot Password</div>
+    <div id="logo" tool><img src="logo.png"/></div>
     <core-card id="core_card" vertical layout start>
         <div id="forgot" style="padding: 20px;">
 
@@ -78,7 +46,7 @@
                         <td id="forgot-button" align="center"><input type="submit" value="RESET PASSWORD" onclick="send_new()"></td>
                     </tr>
                     <tr>
-                        <td style="font-size: 20px;">Please email us at monifest4@gmail.com to receive your new temporary password</td>
+                        <td style="font-size: 5.88vw;">Please email us at monifest4@gmail.com to receive your new temporary password</td>
                     </tr>
 
                 </table>

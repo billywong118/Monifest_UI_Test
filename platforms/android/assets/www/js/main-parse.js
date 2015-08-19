@@ -415,3 +415,47 @@ function get_alerts () {
 	}
 	});
 }
+
+/*function getViewport() {
+
+	var viewPortWidth;
+	var viewPortHeight;
+
+	// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+	if (typeof window.innerWidth != 'undefined') {
+		viewPortWidth = window.innerWidth,
+			viewPortHeight = window.innerHeight
+	}
+
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+	else if (typeof document.documentElement != 'undefined'
+		&& typeof document.documentElement.clientWidth !=
+		'undefined' && document.documentElement.clientWidth != 0) {
+		viewPortWidth = document.documentElement.clientWidth,
+			viewPortHeight = document.documentElement.clientHeight
+	}
+
+	// older versions of IE
+	else {
+		viewPortWidth = document.getElementsByTagName('body')[0].clientWidth,
+			viewPortHeight = document.getElementsByTagName('body')[0].clientHeight
+	}
+	if (document.getElementById("hello") != null) {
+		document.getElementById("hello").style.fontSize = (viewPortWidth / 7.5).toString() + "px";//(45px)
+		document.getElementById("options").style.fontSize = (viewPortWidth / 13.6).toString() + "px"; // (25px)
+	}
+	else if (document.getElementById("signup") != null) {
+		document.getElementById("signup").style.fontSize = (viewPortWidth / 15).toString() + "px"; // (22.5px)
+		document.getElementById("register").style.fontSize = (viewPortWidth / 18.1).toString() + "px"; // (18.75px)
+		var inputs = document.getElementsByTagName("input");
+		for (var i=0; i < inputs.length; i++) {
+			inputs[i].style.height = (viewPortHeight / 19.6).toString() + "px"; //(35px)
+		}
+	}
+	else if (document.getElementById("goals") != null) {
+		document.getElementById("calendar").style.fontSize = (viewPortWidth / 17.9).toString() + "px"; // (19px)
+	}
+
+}
+
+getViewport();*/

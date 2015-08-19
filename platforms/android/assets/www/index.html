@@ -15,6 +15,7 @@
     <link rel="import" href="bower_components/core-item/core-item.html">
     <link rel="import" href="bower_components/paper-toast/paper-toast.html">
     <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
     <style>
     paper-fab {
         right: 0px;
@@ -55,11 +56,16 @@
 
                 <tr>
                     <td class="balance-button" align="center">
-                        <paper-fab icon="add-circle-outline" id="add-balance" onclick="addbalance()"></paper-fab>
+
+                        <paper-button id="add-balance" onclick="addbalance()">
+                            <core-icon icon="add-circle-outline"></core-icon>
+                        </paper-button>
                         <!--<button type="button" id="add-balance" onclick="addbalance()">+</button>-->
                     </td>
                     <td class="balance-button" align="center">
-                        <paper-fab icon="remove-circle-outline" id="subtract-balance" onclick="subtractbalance()"></paper-fab>
+                        <paper-button id="subtract-balance" onclick="subtractbalance()">
+                            <core-icon icon="remove-circle-outline"></core-icon>
+                        </paper-button>
                         <!--<button type="button" id="subtract-balance" onclick="subtractbalance()">-</button>-->
                     </td>
                 </tr>

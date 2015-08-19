@@ -14,3 +14,18 @@ html /deep/ core-icon {
   height: 24px;
   width: 24px;
 }
+
+core-scaffold::shadow core-header-panel core-toolbar core-icon-button::shadow core-icon {
+  height: 50px;
+  width: 50px;
+}
+
+#goals paper-fab::shadow core-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  fill: currentcolor;
+  position: relative;
+  height: 7.06vw;
+  width: 7.06vw;
+}
