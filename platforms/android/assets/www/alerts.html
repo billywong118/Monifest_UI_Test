@@ -19,14 +19,23 @@
     <link rel="import" href="bower_components/paper-toggle-button/paper-toggle-button.html">
     <style>
         paper-toggle-button::shadow [checked] .toggle {
-            background-color: #2e96ad;
+            background-color: #98ff98;
         }
         paper-toggle-button::shadow .toggle-bar {
             background-color: #f1f1f1;
             border: 1px solid black;
         }
         paper-toggle-button::shadow .toggle-button {
-            border: 1px solid #4c4c4c;
+            border: 1px solid #98ff98;
+        }
+
+        paper-checkbox::shadow #checkbox.checked {
+            background-color: #98ff98;
+            border: 1px solid #007f4c;
+        }
+
+        paper-checkbox::shadow #checkmark {
+            border-color: #1e204b;
         }
 
     </style>
@@ -48,7 +57,8 @@
             <core-item src="logout-icon.png" label="Logout" onclick="logout()"></core-item>
         </core-menu>
     </core-header-panel>
-    <div tool>Alerts</div>
+    <div id="title" tool>Alerts</div>
+    <div id="logo" tool><img src="logo.png"/></div>
     <core-card id="core_card" vertical layout start>
         <div id="alerts" style="padding: 20px 5px;">
 

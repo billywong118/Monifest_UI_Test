@@ -20,7 +20,12 @@ core-scaffold::shadow core-header-panel core-toolbar core-icon-button::shadow co
   width: 50px;
 }
 
-/*#goals paper-fab::shadow core-icon {
+#goals paper-fab::shadow core-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  fill: currentcolor;
+  position: relative;
   height: 7.06vw;
   width: 7.06vw;
-}*/
+}
