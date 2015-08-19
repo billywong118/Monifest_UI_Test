@@ -14,7 +14,7 @@ GENERAL
 
 body {
 	/*background-color: #6DFD6F;*/
-	background-color: #32eaf1;
+	/*background-color: #32eaf1;*/
 	overflow: auto/*scroll*/;
 }
 
@@ -148,7 +148,7 @@ core-scaffold {
 }
 #core_card {
 	width: 96%;
-	background-color: /*#32eaf1*/white;
+	background-color: white /*#32eaf1*/;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
@@ -170,6 +170,7 @@ WELCOME
 #welcome {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
+	width: 90%;
 }
 
 #hello {
@@ -177,15 +178,17 @@ WELCOME
 	font-size: 45px;
 	font-weight: normal;
 	margin-top: 60px/*29.375%*/;
+	text-align: center;
 }
 
 #options {
-	font-size: 27.5px;
+	font-size: 25px;
 	margin-top: 60px/*30.625%*/;
 	color: #676CFB;
+	text-align: center;
 }
 
-#options  a {
+#options a {
 	text-decoration: none;
 }
 
@@ -388,12 +391,12 @@ HOME
 	width: 100%;
 }
 
-/*#home table {
+#home table {
 	width: 80%;
 	margin: 20px 10%;
 	text-align: center;
 }
-*/
+
 #date {
 	color: #676CFB;
 	font-size: 35px;
@@ -495,13 +498,13 @@ GOALS
 	border: 1px solid black;
 	margin: auto;
 	background-color: black;
-	margin: 12.5px 0px 12.5px 1%;
-	width: 98%;
+	margin: 12.5px 0.5% 12.5px 0.5%;
+	width: 99%;
 }
 
 #calendar td {
 	background-color: #98ff98;
-	font-size: 20px;
+	font-size: 19px;
 	color: #676CFB;
 	padding: 2% 0;
 }
@@ -532,7 +535,9 @@ GOALS
 	color: #676CFB;
 	font-size: 23px;
 	width: 100%;
-	padding: 2.5%;
+	padding: 0 2.5%;
+	text-transform: none;
+	/*height: 30px;*/
 	/*display: inline-block;*/
 }
 
@@ -559,14 +564,13 @@ GOALS
 }
 
 .current_goal {
-	width: 93%;
+	width: 100%;
 	text-align: left;
 	background-color: #b5f6f9;
 	color: #676CFB;
 	font-size: 20px;
-	margin: 0 auto auto 0;
-	border: 3px outset #79cc79;
-	padding: 2.5%;
+	border-top: 3px outset #79cc79;
+	padding: 2.5% 0;
 	display: none;
 }
 

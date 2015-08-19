@@ -5,6 +5,7 @@ GENERAL
 /*width of screen is 356px*/
 
 * {
+	font-family: 'Raleway', sans-serif;
 	/*font-family: 'Roboto', sans-serif;*/
 	/*font-family: 'Lobster', cursive;*/
 	/*font-family: 'Bangers', cursive;*/
@@ -13,7 +14,7 @@ GENERAL
 
 body {
 	/*background-color: #6DFD6F;*/
-	background-color: #32eaf1;
+	/*background-color: #32eaf1;*/
 	overflow: auto/*scroll*/;
 }
 
@@ -35,7 +36,7 @@ header p {
 	color: #676CFB;
 	font-size: 45px;
 	font-weight: bold;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 
@@ -52,7 +53,7 @@ header p {
 }
 
 #nav-bar button {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #logo {
@@ -78,7 +79,7 @@ a:hover {
 input {
 	background-color: white;
 	font-size: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #nav button{
@@ -147,7 +148,7 @@ core-scaffold {
 }
 #core_card {
 	width: 96%;
-	background-color: #32eaf1;
+	background-color: white /*#32eaf1*/;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
@@ -168,7 +169,8 @@ WELCOME
 
 #welcome {
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	width: 90%;
 }
 
 #hello {
@@ -176,15 +178,17 @@ WELCOME
 	font-size: 45px;
 	font-weight: normal;
 	margin-top: 60px/*29.375%*/;
+	text-align: center;
 }
 
 #options {
-	font-size: 27.5px;
+	font-size: 25px;
 	margin-top: 60px/*30.625%*/;
 	color: #676CFB;
+	text-align: center;
 }
 
-#options  a {
+#options a {
 	text-decoration: none;
 }
 
@@ -199,7 +203,7 @@ SIGN UP
 #signup {
 	font-size: 22.5px;
 	color: #676CFB;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	width: 100%;
 }
 
@@ -313,7 +317,7 @@ LOGIN
 #login {
 	color: #676CFB;
 	font-size: 30px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	width: 100%;
 }
 
@@ -350,7 +354,7 @@ FORGOT PASSWORD
 #forgot {
 	color: #676CFB;
 	font-size: 30px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	width: 100%;
 }
 
@@ -383,16 +387,16 @@ HOME
 ----------------------*/
 
 #home {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	width: 100%;
 }
 
-/*#home table {
+#home table {
 	width: 80%;
 	margin: 20px 10%;
 	text-align: center;
 }
-*/
+
 #date {
 	color: #676CFB;
 	font-size: 35px;
@@ -456,7 +460,7 @@ GOALS
 
 #goals {
 	margin: 0px 0 0 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 
@@ -469,7 +473,7 @@ GOALS
 	font-size: 30px;
 	color: #676CFB;
 	margin: 10px 10% 25px 10%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #create-a-goal {
@@ -480,7 +484,7 @@ GOALS
 	background-color: #98ff98;
 	color: #676CFB;
 	margin: 10px 7.5% 25px 7.5%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #month {
@@ -494,13 +498,13 @@ GOALS
 	border: 1px solid black;
 	margin: auto;
 	background-color: black;
-	margin: 12.5px 0px 12.5px 1%;
-	width: 98%;
+	margin: 12.5px 0.5% 12.5px 0.5%;
+	width: 99%;
 }
 
 #calendar td {
 	background-color: #98ff98;
-	font-size: 20px;
+	font-size: 19px;
 	color: #676CFB;
 	padding: 2% 0;
 }
@@ -531,7 +535,9 @@ GOALS
 	color: #676CFB;
 	font-size: 23px;
 	width: 100%;
-	padding: 2.5%;
+	padding: 0 2.5%;
+	text-transform: none;
+	/*height: 30px;*/
 	/*display: inline-block;*/
 }
 
@@ -554,18 +560,17 @@ GOALS
 	height: 30px;
 	width: 30px /*50px for Bangers*/;
 	font-size: 14px/*16px for Bangers*/;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 .current_goal {
-	width: 93%;
+	width: 100%;
 	text-align: left;
 	background-color: #b5f6f9;
 	color: #676CFB;
 	font-size: 20px;
-	margin: 0 auto auto 0;
-	border: 3px outset #79cc79;
-	padding: 2.5%;
+	border-top: 3px outset #79cc79;
+	padding: 2.5% 0;
 	display: none;
 }
 
@@ -578,7 +583,7 @@ CREATE GOALS-
 }
 
 #goal-creation, #goal-creation input {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #goal_notice {
@@ -631,7 +636,7 @@ GPS
 -------------------------------*/
 
 #gps {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #map-canvas {
@@ -671,7 +676,7 @@ ALERTS
 #alerts {
 	font-size: 30px;
 	color: #676CFB;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	width: 100%;
 }
 
@@ -761,7 +766,7 @@ SETTINGS
 --------------------------------------------*/
 
 #settings {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	width: 100%;
 }
 
@@ -799,5 +804,5 @@ SETTINGS
 	border-radius: 15%;
 	border: none;
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }

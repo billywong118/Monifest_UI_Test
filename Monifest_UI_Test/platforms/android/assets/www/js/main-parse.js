@@ -64,7 +64,7 @@ function get_goals() {
 		}
 		
 		var delbutton_name = replaced + "_delete";
-		cell.innerHTML = "<div><table class='goal-table'><tr><td class='clickopen' onclick='expand(this)' id=" + replaced +">" + /*name*/name_to_show + "</td><td class='delete_button'><paper-fab mini icon='delete' onclick='delete_goal(this)' id=" + delbutton_name + "></paper-fab></td></tr></table><div class='current_goal' id=" + name_of_goal +">Cost:</br>$" + (goals[i])[1] + "</br></br>Time Left to Complete Goal:</br>" + diffDays + " days</br></br>Money Saved:</br>$" + Balance +"</br></br>Money Needed:</br><div class='money_need'>$" + ((goals[i])[1] - Balance).toFixed(2) + "</div></br></div></div>";
+		cell.innerHTML = "<div><table class='goal-table'><tr><td><paper-button class='clickopen' onclick='expand(this)' id=" + replaced +">" + name_to_show + "</paper-button></td><td class='delete_button'><paper-fab mini icon='delete' onclick='delete_goal(this)' id=" + delbutton_name + "></paper-fab></td></tr><tr><td colspan='2'><div class='current_goal' id=" + name_of_goal +">Cost:</br>$" + (goals[i])[1] + "</br></br>Time Left to Complete Goal:</br>" + diffDays + " days</br></br>Money Saved:</br>$" + Balance +"</br></br>Money Needed:</br><div class='money_need'>$" + ((goals[i])[1] - Balance).toFixed(2) + "</div></br></div></td></tr></table></div>";
 		}
 		checkdone();
 	},
@@ -78,6 +78,11 @@ function get_goals() {
 function expand(thing) {	
 	x = document.getElementById(thing.id + "_expand");
 	if (x.style.display.match("none")) {
+		var all_goals = document.getElementsByClassName("current_goal");
+		for (var i=0; i < all_goals.length; i++) {
+			all_goals[i].style.display = "none"
+		}
+
 		x.style.display = "block";
 	}
 	else {

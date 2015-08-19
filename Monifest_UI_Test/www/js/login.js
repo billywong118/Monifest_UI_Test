@@ -9,7 +9,6 @@ var password = document.getElementById("password").value;
 var object;
 var passcheck;
 
-event.preventDefault();
 
 var query = new Parse.Query(UserObject);
 query.equalTo("username", email);

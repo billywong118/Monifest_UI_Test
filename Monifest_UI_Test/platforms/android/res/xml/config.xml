@@ -14,5 +14,6 @@
     </author>
     <preference name="permissions" value="none" />
     <gap:plugin name="com.phonegap.plugins.pushplugin" version="2.4.0" />
+    <access origin="*" />
     <icon src="www/logo.png" />
 </widget>
