@@ -435,9 +435,9 @@ HOME
 }
 
 #add-balance /deep/ core-icon, #subtract-balance /deep/ core-icon {
-	height: 120%;
-	width: 120%;
-	margin: -10% 0 0 -10%;
+	height: 84px;
+	width: 84px;
+	margin: -7px 0 0 -7px;
 }
 
 .balance-button {
