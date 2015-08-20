@@ -16,8 +16,8 @@ html /deep/ core-icon {
 }
 
 core-scaffold::shadow core-header-panel core-toolbar core-icon-button::shadow core-icon {
-  height: 50px;
-  width: 50px;
+  height: 50px /*14.71vw*/;
+  width: 50px /*14.71vw*/;
 }
 
 #goals paper-fab::shadow core-icon {
@@ -28,4 +28,17 @@ core-scaffold::shadow core-header-panel core-toolbar core-icon-button::shadow co
   position: relative;
   height: 7.06vw;
   width: 7.06vw;
+}
+
+#home paper-button core-icon {
+  height: /*84px*/ 24.69vw;
+  width: /*84px*/ 24.69vw;
+  border-radius: 100%;
+}
+
+#home paper-fab::shadow core-icon {
+  height: 24.69vw;
+  width: 24.69vw;
+  margin-top: -2.345vw;
+  margin-left: -2.345vw;
 }

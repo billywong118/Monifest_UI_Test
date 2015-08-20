@@ -41,8 +41,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 #toggleContainer {
   position: relative;
-  width: 36px;
-  height: 14px;
+  width: 36px/*10.59vw*/;
+  height: 14px/*4.12vw*/;
 }
 
 #toggleContainer[disabled] {
@@ -54,7 +54,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   position: absolute;
   height: 100%;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 8px/*2.35vw*/;
   pointer-events: none;
   opacity: 0.26;
   transition: background-color linear .08s;
@@ -66,11 +66,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 #toggleButton {
   position: absolute;
-  top: -3px;
-  height: 20px;
-  width: 20px;
+  top: -3px/*-0.882vw*/;
+  height: 20px/*5.882vw*/;
+  width: 20px/*5.882vw*/;
   border-radius: 50%;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px/*0.294vw*/ 5px/*1.47vw*/ 0 rgba(0, 0, 0, 0.4);
   transition: -webkit-transform linear .08s, background-color linear .08s;
   transition: transform linear .08s, background-color linear .08s;
 }
@@ -81,15 +81,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 [checked] #toggleButton {
-  -webkit-transform: translate(16px, 0);
-  transform: translate(16px, 0);
+  -webkit-transform: translate(16px/*4.71vw*/, 0);
+  transform: translate(16px/*4.71vw*/, 0);
 }
 
 #ink {
   position: absolute;
-  top: -14px;
-  left: -14px;
-  width: 48px;
-  height: 48px;
+  top: -14px/*-4.12vw*/;
+  left: -14px/*-4.12vw*/;
+  width: 48px/*14.117vw*/;
+  height: 48px/*14.117vw*/;
   pointer-events: none;
 }

@@ -64,7 +64,7 @@ function get_goals() {
 		}
 		
 		var delbutton_name = replaced + "_delete";
-		cell.innerHTML = "<div><table class='goal-table'><tr><td><paper-button class='clickopen' onclick='expand(this)' id=" + replaced +">" + name_to_show + "</paper-button></td><td class='delete_button'><paper-fab mini icon='delete' onclick='delete_goal(this)' id=" + delbutton_name + "></paper-fab></td></tr><tr><td colspan='2'><div class='current_goal' id=" + name_of_goal +">Cost:</br>$" + (goals[i])[1] + "</br></br>Time Left to Complete Goal:</br>" + diffDays + " days</br></br>Money Saved:</br>$" + Balance +"</br></br>Money Needed:</br><div class='money_need'>$" + ((goals[i])[1] - Balance).toFixed(2) + "</div></br></div></td></tr></table></div>";
+		cell.innerHTML = "<div><table class='goal-table'><tr><td><paper-button class='clickopen' onclick='expand(this)' id=" + replaced +">" + name_to_show + "</paper-button></td><td class='delete_button'><paper-fab id='trash' mini icon='delete' onclick='delete_goal(this)' id=" + delbutton_name + "></paper-fab></td></tr><tr><td colspan='2'><div class='current_goal' id=" + name_of_goal +">Cost:</br>$" + (goals[i])[1] + "</br></br>Time Left to Complete Goal:</br>" + diffDays + " days</br></br>Money Saved:</br>$" + Balance +"</br></br>Money Needed:</br><div class='money_need'>$" + ((goals[i])[1] - Balance).toFixed(2) + "</div></br></div></td></tr></table></div>";
 		}
 		checkdone();
 	},

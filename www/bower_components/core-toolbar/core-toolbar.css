@@ -14,11 +14,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   /* size */
-  height: 64px;
+  height: 64px /*18.82vw*/;
   /* typography */
   font-size: 1.3em;
   /* background */
-  background-color: #CFD8DC;
+  background-color: /*#CFD8DC*/ #007f4c;
 }
 
 :host(.animate) {

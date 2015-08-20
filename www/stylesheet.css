@@ -69,10 +69,6 @@ core-scaffold {
 	bottom: 0;
 	left: 0;
 }
-#core_toolbar, core-scaffold::shadow core-header-panel core-toolbar {
-	color: rgb(255, 255, 255);
-	background-color: /*rgb(79, 125, 201)*/ rgb(0, 127, 76) /*#007f4c*/;
-}
 
 #logo {
 	width: 30%;
@@ -86,13 +82,21 @@ core-scaffold {
 }
 
 #title {
-	width:70%;
+	width:275vw;
 	text-align: center;
 	display:inline-block;
+	font-size: 25px/*7.35vw;
+	margin-top: 5.735vw;*/
 }
 
 core-scaffold core-header-panel core-menu core-item {
-	font-size: 25px;
+	font-size: 25px /*7.35vw*/;
+	color: #1e204b;
+}
+
+core-toolbar {
+	font-size: 25px /*7.35vw*/;
+	color: white;
 }
 
 #core_card {
@@ -108,8 +112,8 @@ core-scaffold core-header-panel core-menu core-item {
 }
 paper-fab {
 	position: absolute;
-	right: 20px;
-	bottom: 20px;
+	right: /*20px*/5.882vw;
+	bottom: /*20px*/5.882vw;
 }
 
 /*-----------------------------
@@ -282,7 +286,7 @@ LOGIN
 
 .field {
 	width: 100%/*260px*/;
-	height: /*32px*/ 9.2vw;
+	height: /*32px*/ 9.32vw;
 }
 
 #login-button{
@@ -373,24 +377,20 @@ HOME
 	overflow: hidden;
 }
 
-#add-balance {
+#home paper-fab {
+	height: 20vw;
+	width: 20vw;
 	background-color: transparent/*#98ff98*/;
-	color: /*#00ff99*/ #007F4C;
 	border-radius: 100%;
 	padding: 0px;
+}
+
+#add-balance {
+	color: /*#00ff99*/ #007F4C;
 }
 
 #subtract-balance {
-	background-color: transparent/*#98ff98*/;
 	color: /*#ff66a3*/ #7f0033;
-	border-radius: 100%;
-	padding: 0px;
-}
-
-#home core-icon {
-	height: /*84px*/ 24.69vw;
-	width: /*84px*/ 24.69vw;
-	border-radius: 100%;
 }
 
 .balance-button {
@@ -539,6 +539,7 @@ GOALS
 #goals paper-fab {
 	height: 11.76vw;
 	width: 11.76vw;
+	padding: 2.3529vw;
 }
 
 /*-------------------------------------
@@ -669,7 +670,7 @@ ALERTS
     position: relative;*/
 }
 
-paper-toggle-button::shadow #toggleContainer {
+/*paper-toggle-button::shadow #toggleContainer {
 	 position: relative;
 	 width: 10.59vw;
 	 height: 4.12vw;
@@ -712,7 +713,7 @@ paper-checkbox::shadow #checkmark {
 	border-left: none;
 	border-right-width: 1vw;
 	border-bottom-width: 1vw;
-}
+}*/
 
 /*--------------------------------------------
 SETTINGS
