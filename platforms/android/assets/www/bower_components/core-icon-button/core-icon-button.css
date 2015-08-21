@@ -15,11 +15,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   -moz-user-select: none;
   -webkit-user-select: none;
   border-radius: 2px;
-  padding: 7px;
-  margin: 2px;
+  padding: /*7px*/2.06vw;
+  margin: /*2px*/0.588vw;
   vertical-align: middle;
   font-size: 1rem;
   cursor: pointer;
+  /*height: 10vw;*/
+  width: 18vw;
 }
 
 :host([disabled]) {
@@ -71,5 +73,5 @@ core-icon {
 
 /* note: this is a polyfill aware selector */
 :host ::content > :not(core-icon) {
-  margin-left: 4px;
+  margin-left: /*4px*/ 1.176vw;
 }

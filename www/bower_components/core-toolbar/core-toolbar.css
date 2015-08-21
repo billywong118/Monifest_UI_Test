@@ -14,11 +14,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   /* size */
-  height: 64px /*18.82vw*/;
+  height: 18.82vw;
+  /*height: 64px*/;
+
   /* typography */
   font-size: 1.3em;
   /* background */
-  background-color: /*#CFD8DC*/ #007f4c;
+  background-color: /*#CFD8DC*/ #526E9C /*#007f4c*/;
 }
 
 :host(.animate) {
@@ -27,42 +29,49 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 :host(.medium-tall) {
-  height: 128px;
+  /*height: 128px;*/
+  height: 37.65vw;
 }
 
 :host(.tall) {
-  height: 192px;
+  /*height: 192px;*/
+  height: 56.5vw;
 }
 
 .toolbar-tools {
   position: relative;
-  height: 64px;
-  padding: 0 8px;
+  /*height: 64px;*/
+  height: 18.82vw;
+  /*padding: 0 8px;*/
+  padding: 0 2.352vw;
   pointer-events: none;
 }
 
 /* narrow layout */
 :host(.core-narrow),
 :host-context(.core-narrow) {
-  height: 56px;
+  /*height: 56px;*/
+  height: 6.071vw;
 }
 
 polyfill-next-selector { content: ':host.core-narrow.medium-tall, .core-narrow :host.medium-tall'; }
 :host(.core-narrow.medium-tall),
 :host-context(.core-narrow):host(.medium-tall) {
-  height: 112px;
+  /*height: 112px;*/
+  height: 32.89vw;
 }
 
 polyfill-next-selector { content: ':host.core-narrow.tall, .core-narrow :host.tall'; }
 :host(.core-narrow.tall),
 :host-context(.core-narrow):host(.tall) {
-  height: 168px;
+  /*height: 168px;*/
+  height: 49.43vw;
 }
 
 polyfill-next-selector { content: ':host.core-narrow .toolbar-tools, .core-narrow :host .toolbar-tools'; }
 :host(.core-narrow) .toolbar-tools,
 :host-context(.core-narrow) .toolbar-tools {
-  height: 56px;
+  /*height: 56px;*/height: 16.47vw;
   padding: 0;
 }
 
@@ -96,7 +105,8 @@ polyfill-next-selector { content: '.toolbar-tools > *:not([disabled])'; }
 /* elements spacing */
 polyfill-next-selector { content: '.toolbar-tools > *'; }
 ::content > * {
-  margin: 0 8px;
+  /*margin: 0 8px;*/
+  margin: 0 2.352vw;
 }
 
 /* misc helpers */
@@ -113,5 +123,6 @@ polyfill-next-selector { content: '.toolbar-tools > .fit'; }
 
 polyfill-next-selector { content: ':host .indent'; }
 ::content > .indent {
-  margin-left: 60px;
+  /*margin-left: 60px;*/
+  margin-left: 17.65vw;
 }

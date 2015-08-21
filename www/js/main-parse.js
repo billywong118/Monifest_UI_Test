@@ -64,7 +64,12 @@ function get_goals() {
 		}
 		
 		var delbutton_name = replaced + "_delete";
-		cell.innerHTML = "<div><table class='goal-table'><tr><td><paper-button class='clickopen' onclick='expand(this)' id=" + replaced +">" + name_to_show + "</paper-button></td><td class='delete_button'><paper-fab id='trash' mini icon='delete' onclick='delete_goal(this)' id=" + delbutton_name + "></paper-fab></td></tr><tr><td colspan='2'><div class='current_goal' id=" + name_of_goal +">Cost:</br>$" + (goals[i])[1] + "</br></br>Time Left to Complete Goal:</br>" + diffDays + " days</br></br>Money Saved:</br>$" + Balance +"</br></br>Money Needed:</br><div class='money_need'>$" + ((goals[i])[1] - Balance).toFixed(2) + "</div></br></div></td></tr></table></div>";
+		var money_need = ((goals[i])[1] - Balance).toFixed(2);
+		var money_percent = (Balance / (goals[i])[1]);
+		if (money_percent > 1) {
+			money_percent = 1
+		};
+		cell.innerHTML = "<div><table class='goal-table'><tr><td><paper-button class='clickopen' onclick='expand(this)' id=" + replaced +">" + name_to_show + "</paper-button></td><td class='delete_button'><paper-fab id='trash' mini icon='delete' onclick='delete_goal(this)' id=" + delbutton_name + "></paper-fab></td></tr><tr><td colspan='2'><div class='current_goal' id=" + name_of_goal +">Cost:</br>$" + (goals[i])[1] + "</br></br>Time Left to Complete Goal:</br>" + diffDays + " days</br></br>Money Saved:</br><div style='display: inline-block'>$" + Balance +"</div><div class='progress'><div class='progress_part' style='border-right: 1px solid black; text-align: center; border-radius: 15%; width:" + (29.411 * money_percent).toString() + "vw; background-color: #98ff98'>" + Math.round(money_percent * 100) + "%</div></div></br></br>Money Needed:</br><div class='money_need' style='display: inline-block'>$" + money_need + "</div></br></div></td></tr></table></div>";
 		}
 		checkdone();
 	},

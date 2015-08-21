@@ -10,7 +10,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 :host {
   display: block;
   position: relative;
-  min-height: 40px;
+  /*min-height: 40px;*/
+  min-height: 11.111vw;
   white-space: nowrap;
 }
 
@@ -23,7 +24,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 #icon {
-  margin: 0 16px 0 4px;
+  /*margin: 0 16px 0 4px;*/
+  margin: 0 4.71vw 0 1.18vw;
 }
 
 :host(.font-scalable) #icon {

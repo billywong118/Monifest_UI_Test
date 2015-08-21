@@ -36,8 +36,10 @@
             <core-item src="logout-icon.png" label="Logout" onclick="logout()"></core-item>
         </core-menu>
     </core-header-panel>
-    <div id="title" tool>Home</div>
-    <div id="logo" tool><img src="logo.png"/></div>
+    <table width="100%" tool><tr>
+        <td id="title" tool>Home</td>
+        <td id="logo" tool><img src="logo.png"/></td>
+    </tr></table>
     <core-card id="core_card" vertical layout start>
         <div id="home" style="padding: 20px 5px;">
 
@@ -78,11 +80,14 @@
 </core-scaffold>
 <!--<paper-fab icon="add" onclick="document.querySelector('#toast1').show()"></paper-fab>-->
 </body>
+<script src="js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
 <script src="js/parse-1.5.0.min.js"></script>
 <script src="js/main-parse.js"></script>
 <script src="js/buttons.js"></script>
+<script src="js/PushNotification.js"></script>
+<script src="js/device_ready.js"></script>
 <script type="text/javascript">
     app.initialize();
 
@@ -108,7 +113,7 @@
 
     if (User == null) {
         window.location.href = 'welcome.html';
-    }
+    };
 
 </script>
 </html>

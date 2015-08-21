@@ -71,32 +71,33 @@ core-scaffold {
 }
 
 #logo {
-	width: 30%;
 	text-align: right;
 	display: inline-block;
 }
 
 #logo img {
-	width: 60px;
-	height: 60px;
+	width: /*60px*/ 17.65vw;
+	height: /*60px*/ 17.65vw;
 }
 
 #title {
-	width:275vw;
+	width: 55%;
 	text-align: center;
 	display:inline-block;
-	font-size: 25px/*7.35vw;
-	margin-top: 5.735vw;*/
+	font-size: 7.35vw;
 }
 
 core-scaffold core-header-panel core-menu core-item {
-	font-size: 25px /*7.35vw*/;
+	/*font-size: 25px /*7.35vw*/;
+	font-size: 7.35vw;
 	color: #1e204b;
 }
 
 core-toolbar {
-	font-size: 25px /*7.35vw*/;
+	/*font-size: 25px /*7.35vw*/;
+	font-size: 7.35vw;
 	color: white;
+	/*width: 75.294vw;*/
 }
 
 #core_card {
@@ -181,8 +182,8 @@ SIGN UP
 }
 
 #register input{
-	background-color: #98ff98;
-	color: #1e204b;
+	background-color: /*#98ff98*/#007f4c;
+	color: /*#1e204b*/ white;
 	height: /*35px*/ 8vw;
 	width: /*117px*/ 34.48vw;
 	border-radius: 15%;
@@ -290,8 +291,8 @@ LOGIN
 }
 
 #login-button{
-	background-color: #98ff98;
-	color: #1e204b;
+	background-color: /*#98ff98*/#007f4c;
+	color: /*#1e204b*/ white;
 	height: /*46px*/ 13.53vw;
 	width: /*221px*/65vw;
 	font-size: /*18.75px*/ 5.52vw;
@@ -331,8 +332,8 @@ FORGOT PASSWORD
 }
 
 #forgot-button input{
-	background-color: #98ff98;
-	color: #1e204b;
+	background-color: /*#98ff98*/#007f4c;
+	color: /*#1e204b*/ white;
 	height: /*46px*/ 13.53vw;
 	width: /*221px*/65vw;
 	font-size: /*18.75px*/ 5.52vw;
@@ -360,7 +361,7 @@ HOME
 	font-size: /*35px*/10.3vw;
 	text-align: center;
 	height: /*80px*/ 23.53vw;
-	vertical-align: center;
+	/*vertical-align: center;*/
 }
 
 #balance-label {
@@ -431,9 +432,9 @@ GOALS
 	height: 13.33vw;
 	border: 3px outset #79cc79;
 	border-radius: 15%;
-	background-color: #98ff98;
-	font-size: 17.64vw;
-	color: #1e204b;
+	background-color: /*#98ff98*//*#007f4c;*/
+	/*font-size: 17.64vw;
+	color: /*#1e204b*/ /*white;
 	margin: 10px 10% 25px 10%;
 	font-family: 'Raleway', sans-serif;
 }*/
@@ -443,8 +444,8 @@ GOALS
 	width: 85%;
 	border: 3px outset #79cc79;
 	border-radius: 15%;
-	background-color: #98ff98;
-	color: #1e204b;
+	background-color: /*#98ff98*/#007f4c;
+	color: /*#1e204b*/ white;
 	margin: /*10px*/2.94vw 7.5% /*25px*/7.35vw 7.5%;
 	font-family: 'Raleway', sans-serif;
 }
@@ -466,8 +467,8 @@ GOALS
 }
 
 #calendar td {
-	background-color: #98ff98;
-	color: #1e204b;
+	background-color: /*#98ff98*/#007f4c;
+	color: /*#1e204b*/ white;
 	padding: 2% 0;
 }
 
@@ -485,7 +486,7 @@ GOALS
 
 .goal-table {
 	border: 3px outset #79cc79;
-	background-color: #98ff98;
+	background-color: /*#98ff98*/#007f4c;
 	width: 100%;
 }
 
@@ -493,8 +494,8 @@ GOALS
 	text-align: center;
 	/*border: 3px outset #79cc79;
     border-right: none;*/
-	background-color: #98ff98;
-	color: #1e204b;
+	background-color: /*#98ff98*/#007f4c;
+	color: /*#1e204b*/white;
 	font-size: /*23px*/6.77vw;
 	width: 100%;
 	padding: 0 2.5%;
@@ -507,7 +508,7 @@ GOALS
 	text-align: center;
 	/*border: 3px outset #79cc79;
     border-left: none;*/
-	background-color: #98ff98;
+	background-color: /*#98ff98*/#007f4c;
 	color: #1e204b;
 	font-size: 23px;
 	width: 15%;
@@ -528,13 +529,24 @@ GOALS
 .current_goal {
 	width: 100%;
 	text-align: left;
-	background-color: #b5f6f9;
+	background-color: /*#b5f6f9*/ #ececec;
 	color: #1e204b;
 	font-size: /*20px*/ 5.88vw;
 	border-top: 3px outset #79cc79;
 	padding: 2.5% 0;
 	display: none;
 }
+
+.progress {
+	border: 1px solid black;
+	display: inline-block;
+	margin-left: 20vw;
+	width: 29.411vw;
+	border-radius: 15%;
+	background-color: #f9f9f9;
+}
+
+
 
 #goals paper-fab {
 	height: 11.76vw;
@@ -589,8 +601,8 @@ CREATE GOALS-
 }
 
 #create-goal-button{
-	background-color: #98ff98;
-	color: #1e204b;
+	background-color: /*#98ff98*/#007f4c;
+	color: /*#1e204b*/white;
 	border-radius: 15%;
 	font-size: /*18.75px*/5.52vw;
 	border: 1px outset #1e204b;
@@ -750,8 +762,8 @@ SETTINGS
 }
 
 #confirm_reset {
-	background-color: #98ff98;
-	color: #1e204b;
+	background-color: /*#98ff98*/#007f4c;
+	color: /*#1e204b*/ white;
 	height: /*46px*/13.53vw;
 	width: /*200px*/58.82vw;
 	font-size: /*18.75px*/5.52vw;

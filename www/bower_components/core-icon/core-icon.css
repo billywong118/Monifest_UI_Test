@@ -11,14 +11,22 @@ html /deep/ core-icon {
   background-repeat: no-repeat;
   fill: currentcolor;
   position: relative;
-  height: 24px;
-  width: 24px;
+  /*height: 24px;
+  width: 24px;*/
+  height: 7.06vw;
+  width: 7.06vw;
 }
 
 core-scaffold::shadow core-header-panel core-toolbar core-icon-button::shadow core-icon {
-  height: 50px /*14.71vw*/;
-  width: 50px /*14.71vw*/;
+  height: /*50px */ 14.71vw;
+  width: /*50px */ 14.71vw;
+  display: inline-block;
 }
+
+/*core-scaffold::shadow core-header-panel core-menu core-item::shadow core-icon {
+  height: 7.06vw;
+  width: 7.06vw;
+}*/
 
 #goals paper-fab::shadow core-icon {
   display: inline-block;
